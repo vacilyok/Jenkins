@@ -24,7 +24,7 @@ pipeline {
             steps {
                 echo " ============== start container =================="
                 sh 'docker run -d --name from_jenkins vacilyok/toolbox:latest'
-                }
+                
             }
         }
 
