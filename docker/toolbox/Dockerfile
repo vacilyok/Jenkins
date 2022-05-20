@@ -1,2 +1,2 @@
 FROM alpine
-RUN apt install mc
+RUN apk update && apk add mc
