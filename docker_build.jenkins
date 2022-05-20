@@ -20,13 +20,14 @@ pipeline {
                 }
             }
         }
-        stage("Start container") {
+        stage("start container") {
             steps {
-                echo " ============== start building image =================="
-                sh 'docker run -d --name fromjenkins vacilyok/toolbox:latest '
+                echo " ============== start container =================="
+                sh 'docker run -d --name from_jenkins vacilyok/toolbox:latest'
                 }
             }
         }
+
 
     }
 }
